@@ -30,34 +30,27 @@ int *inputArr(int *count) {
 
 
 //2 задание
-int sumLastNums (std::string str)
+int sumLastNums (int x)
 {
-    std::cout << str << std::endl;
-    int a,x, b, sumLastNums;
-    std::cin >> x;
+    int a, b, sum;
     a = x % 10;
     b = x / 10 % 10;
-    std::cout<<"a = "<<a<<" b = "<<b<<std::endl;
-    sumLastNums = a + b;
-    return sumLastNums;
+    sum = a + b;
+    return 0;
 }
 
 //4 задание
 bool isPositive (int x)
 {
     bool c ;
-    c = x>=0;
-    std::cout<<"otvet = "<<std::boolalpha<<c<<std::endl;
-    return 0;
+    return c = x>=0;
 }
 
 //6 задание
 bool isUpperCase (char x)
 {
     bool c;
-    c = isupper(x);
-    std::cout<<"otvet = "<<std::boolalpha<<c<<std::endl;
-    return 0;
+    return c = isupper(x);
 }
 
 //8 задание
@@ -67,10 +60,8 @@ bool isDivisor (int a, int b)
     bool c, d,e;
     c = ((a%b) == 0);
     d = (b%a) == 0;
-    sum = c + d;
-    e = sum > 0;
-    std::cout<<"otvet = "<<std::boolalpha<<e<<std::endl;
-    return 0;
+    sum = c + d;    
+    return e = sum > 0;
 }
 
 //10 задание
@@ -80,9 +71,8 @@ int lastNumSum(int a, int b)
     c = a % 10;
     sum = c;
     c = b % 10;
-    sum += c;
-    std::cout<<"Сумма = "<<sum<<std::endl;
-    return 0;
+    
+    return sum += c;
 }
 
 
@@ -90,8 +80,7 @@ int lastNumSum(int a, int b)
 // 1 задание
 int absDigit (short int x)
 {
-    std::cout<<"модуль числа = "<<abs(x)<<std::endl;
-    return 0;
+    return abs(x);
 }
 
 
@@ -100,11 +89,7 @@ bool is35 (short int x)
 {
     bool a = ((x%3 == 0 && x % 5 != 0) || (x%3 !=0 && x % 5 == 0));
     
-    if (a)
-        std::cout<<"otvet = "<<std::boolalpha<<a<<std::endl;
-    else
-        std::cout<<"otvet = "<<std::boolalpha<<a<<std::endl;
-    return 0;
+    return a;
 }
 
 
@@ -125,10 +110,9 @@ int sum2 (int x, int y)
 {
     short int sumd = (x + y);
     if (sumd >= 10 && sumd < 20)
-        std::cout<<"Сумма чисел = "<<20; 
+    	return 20;
     else
-        std::cout<<"Сумма чисел = "<<sumd;
-    return 0;
+        return sumd;
 }
     
 
@@ -189,7 +173,7 @@ int numLen (long x)
         i++;
     }
     std::cout<<"знаков в числе = "<< i;
-    return 0;
+    return i;
 }
 
 
