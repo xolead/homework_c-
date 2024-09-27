@@ -8,35 +8,38 @@
 int main()
 {
     //2 задание
-    //int sum;
-    //sum = sumLastNums("Введите  число х");
-    //std::cout<<"sumLastNums = "<<sum<<std::endl;
+    //int x;
+    //x = input("Введите  число х");
+    //std::cout<<"сумма = "<<sumLastNums(x)
+    
     
     
     //4 задание
     //int x;
     //x = input("Введите  число х");
-    //isPositive(x);
+    //std::cout<<"otvet = "<<std::boolalpha<<isPositive(x)<<std::endl;
     
     
     //6 задание
     //char x;
     //x = inputChar("Введите  английскую букву");
-    //isUpperCase(x);
+    //std::cout<<"otvet = "<<std::boolalpha<<isUpperCase(x);<<std::endl;
     
     
     //8 задание
     //int a, b;
     //a = input("Введите  число a");
     //b = input("Введите  число b");
-    //isDivisor(a,b);
+    //
+    //std::cout<<"otvet = "<<std::boolalpha<<isDivisor(a,b);<<std::endl;
     
     
     //10 задание
     //int a, b;
     //a = input("Введите  число a");
     //b = input("Введите  число b");
-    //lastNumSum(a,b);
+    //
+    //std::cout<<"Сумма = "<<lastNumSum(a,b)<<std::endl;
     
     
     //2 часть
@@ -45,12 +48,12 @@ int main()
     //1 задание
     //short int a;
     //a = input("Введите число для нахождения его модуля");
-    //absDigit(a);
+    //std::cout<<"Сумма = "<<absDigit(a)<<std::endl;
     
     //3 задание
     //short int a;
     //a = input("Введите число для проверки делимости на 3 и/или 5");
-    //is35(a);
+    //std::cout<<"otvet = "<<std::boolalpha<<is35(a)<<std::endl;
     
     //5 задание
     //short int a,b,c;
@@ -64,7 +67,7 @@ int main()
     //short int a,b;
     //a = input("Введите первое число ");
     //b = input("Введите второе число ");
-    //sum2(a,b);
+    //std::cout<<"otvet = "<<std::<<sum2(a,b)<<std::endl;
 
 
     //9 задание
@@ -90,7 +93,7 @@ int main()
     //long int a;
 
     //a = input("Введите число для подсчета кол-во знаков ");
-    //numLen(a);
+    //std::cout<< numLen(a);
 
 
     //7 задание
@@ -127,5 +130,4 @@ int main()
     delete newarr;
     return 0;
 }
-
 
