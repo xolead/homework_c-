@@ -85,20 +85,13 @@ switch (vibor)
 
     cout << "Введите имя файла: ";
     cin >> name;
-    cout << "Введите количество символов '*': ";
-    cin >> K;
+    K = myIntInput("Введите количество символов '*': ");
 
-    ofstream outputFile(name); // Открытие текстового файла для записи
+    ofstream outputFile(name); 
 
-    if (!outputFile.is_open()) {
-        cout << "Ошибка открытия файла!" << endl;
-        return 1;
-    }
-
-    // Запись K символов '*' в файл с помощью fill_n и ostream_iterator
     fill_n(ostream_iterator<char>(outputFile), K, '*');
 
-    outputFile.close(); // Закрытие файла
+    outputFile.close(); 
 
     cout << "Данные записаны в файл " << name << endl;
   }
@@ -124,7 +117,7 @@ switch (vibor)
         {
             cin >> elem;
         }
-
+    
         auto it = find_first_of(L.begin(), L.end(), V.begin(), V.begin() + n / 2);
 
         if (it != L.end()) {
