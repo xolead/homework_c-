@@ -8,8 +8,13 @@ int myIntInput(std::string str)
 {
     std::cout << str;
     int a;
-    std::cin >> a;
-    return a;
+    if (std::cin >> a);
+        return a;
+    else 
+    {
+    cout<<"Неправильное число"
+    return -1
+    }
 }
 
 void showvector(vector<int> v)
