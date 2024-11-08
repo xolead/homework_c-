@@ -90,12 +90,13 @@ public:
 
   void NewBoss(string temp_boss) { boss = temp_boss; }
 
-  string coutEmployee() {
+    void print()
+{
     if (name == boss)
-      return name + " начальник отдела " + departament;
-    return name + " работает в отделе " + departament +
-           ", начальник которого " + boss;
-  }
+      cout<< name << " начальник отдела " << departament;
+    cout<< name << " работает в отделе " << departament +
+           ", начальник которого " << boss;
+}
 
   vector<string> coutEmployeesForDepart() { return AllEmployee; }
 };
