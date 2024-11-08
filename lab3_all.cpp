@@ -44,6 +44,16 @@ int main()
         }
             break;
 
+        case 6:
+            {
+            Employee em1("Петров", "IT");
+            Employee em2("Козлов", "IT");
+            Employee em3("Сидоров", "IT");
+            std::vector<std::string> all = em3.outputAllEmployee();
+            for (int i = 0; i < 3; i++)
+            std::cout << all[i] << '\n';
+            }
+
         case 4:
         {
             House house1(2);
