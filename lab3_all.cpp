@@ -38,9 +38,9 @@ int main()
             Employee em2("Козлов", "IT");
             Employee em3("Сидоров", "IT");
             em2.NewBoss("Козлов");
-            std::cout << em1.print() << '\n';
-            std::cout << em2.print() << '\n';
-            std::cout << em3.print() << '\n';
+            em1.print();
+            em2.print();
+            em3.print();
         }
             break;
 
@@ -49,9 +49,9 @@ int main()
             Employee em1("Петров", "IT");
             Employee em2("Козлов", "IT");
             Employee em3("Сидоров", "IT");
-            std::vector<std::string> all = em3.outputAllEmployee();
+            vector<string> all = em3.outputAllEmployee();
             for (int i = 0; i < 3; i++)
-            std::cout << all[i] << '\n';
+            cout << all[i] << '\n';
             }
 
         case 4:
