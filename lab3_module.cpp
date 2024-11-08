@@ -73,6 +73,35 @@ public:
     }
 };
 
+
+class Employee {
+protected:
+  static inline vector<string> AllEmployee;
+  static inline string boss;
+  string name;
+  string departament;
+
+public:
+  Employee(string temp_name, string temp_departament) {
+    name = temp_name;
+    departament = temp_departament;
+    AllEmployee.push_back(name);
+  }
+
+  void NewBoss(string temp_boss) { boss = temp_boss; }
+
+  string coutEmployee() {
+    if (name == boss)
+      return name + " начальник отдела " + departament;
+    return name + " работает в отделе " + departament +
+           ", начальник которого " + boss;
+  }
+
+  vector<string> coutEmployeesForDepart() { return AllEmployee; }
+};
+
+
+
 class Pistol
 {
 public:
