@@ -75,13 +75,13 @@ public:
 
 
 class Employee {
-protected:
+public:
   static inline vector<string> AllEmployee;
   static inline string boss;
   string name;
   string departament;
 
-public:
+
   Employee(string temp_name, string temp_departament) {
     name = temp_name;
     departament = temp_departament;
