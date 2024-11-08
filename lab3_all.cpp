@@ -38,9 +38,9 @@ int main()
             Employee em2("Козлов", "IT");
             Employee em3("Сидоров", "IT");
             em2.NewBoss("Козлов");
-            std::cout << em1.coutEmployee() << '\n';
-            std::cout << em2.coutEmployee() << '\n';
-            std::cout << em3.coutEmployee() << '\n';
+            std::cout << em1.print() << '\n';
+            std::cout << em2.print() << '\n';
+            std::cout << em3.print() << '\n';
         }
             break;
 
