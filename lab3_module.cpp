@@ -7,19 +7,25 @@ using namespace std;
 
 class Time 
 {
+private:
+int timeSec;
 public:
-    int time_s;
+   void setTime(timeNew)
+{
+    timeSec = timeNew;
+}
+
     void print() 
     {
-        while (time_s > 86400)
-            time_s -= 86400;
+        while (timeSec > 86400)
+            timeSec -= 86400;
 
         string str_hours, str_minute, str_secunde;
-        int hours = time_s /60 / 60;
-        time_s -=  hours *3600;
+        int hours = time /60 / 60;
+        time -=  hours *3600;
         int minute = time_s /60 ;
-        time_s -= minute * 60;
-        int secunde = time_s;
+        time -= minute * 60;
+        int secunde = time;
         
         if (hours < 10 )
             str_hours = "0" + to_string(hours);
@@ -105,12 +111,16 @@ public:
 
 class Pistol
 {
-public:
-    int ammo;
 
-    Pistol(int n_ammo)
+private: 
+int ammo;
+public:
+
+
+
+    Pistol(int ammoNew)
     {
-        ammo = n_ammo;
+        this->ammo = ammoNew;
     }
 
     Pistol()
@@ -125,6 +135,14 @@ public:
         else 
             cout<<"Клац"<<endl;
         ammo -= 1;
+    }
+
+    void setAmmo(int ammoNew)
+    {
+        if (ammoNew < 0)
+            this-> ammo = 0
+        else
+            this->ammo = ammoNew;
     }
 };
 
