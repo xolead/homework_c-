@@ -19,7 +19,7 @@ int main()
             Time time_3(91800);
             time_3.print();
         }
-        break;
+            break;
 
         case 2:
         {
@@ -30,13 +30,19 @@ int main()
             House house3(23);
             house3.print();
         }
-        break;
-        
+            break;
+
         case 3:
         {
-
+            Employee em1("Петров", "IT");
+            Employee em2("Козлов", "IT");
+            Employee em3("Сидоров", "IT");
+            em2.NewBoss("Козлов");
+            std::cout << em1.coutEmployee() << '\n';
+            std::cout << em2.coutEmployee() << '\n';
+            std::cout << em3.coutEmployee() << '\n';
         }
-        break;
+            break;
 
         case 4:
         {
@@ -49,7 +55,7 @@ int main()
             house3.print();
 
         }
-        break;
+            break;
 
         case 5:
         {
@@ -60,7 +66,7 @@ int main()
             pistolet.print();
             pistolet.print();
         }
-        break;
+            break;
     }
     return 0;
 }
